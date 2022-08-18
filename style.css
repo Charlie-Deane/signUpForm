@@ -1,0 +1,163 @@
+/* meyer reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    color: #010101;
+    background-image: url("https://images.unsplash.com/photo-1593189250605-41623966374a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: IBMPlexMono-Regular;
+}
+
+@font-face {
+    font-family: "nanum";
+    src: url("assets/NanumPenScript-Regular.ttf") format("truetype");
+  }
+
+@font-face{
+    font-family: "IBMPlexMono-Regular";
+    src: url("assets/IBMPlexMono-Regular.ttf");
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#container{
+    display: flex;
+    position: absolute;
+    top: 15vh;
+    left: 12.5vw;
+    height: 66vh;
+    width: 75vw;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7.5% 7.5% 7.5% 7.5%;
+
+}
+
+
+#leftSideMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    border-radius: 7.5% 0% 0% 7.5%;
+    background-image: url("https://images.unsplash.com/photo-1618327907215-4e514efabd41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1227&q=80");
+}
+
+#rightSideMain{
+    background-color: #EFEFEF;
+    width: 40vw;
+    border-radius: 0 7.5% 7.5% 0;
+}
+
+#titleDiv{
+    flex 1;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.3)
+}
+
+#heroDiv{
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signUpDiv{
+    height: 66%;
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#signUpForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    font-family: nanum;
+    font-size: 68px;
+}
+
+h1{
+    color: #EFEFEF;
+}
+
+#accountCheck{
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+#formList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footerdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.formEntry{
+    margin-top: 24px;
+    margin-left: 12px;
+} 
+
+.heroHeader{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+}
