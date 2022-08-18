@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -23,35 +24,37 @@
                         <ul id="formList">
                             <li class="formEntry">
                                 <label for="first_name">FIRST NAME:</label>
-                                <input type="text" id="first_name">
+                                <input type="text" id="first_name" required>
                             </li>
                             <li class="formEntry">
                                 <label for="last_name">LAST NAME:</label>
-                                <input type="text" id="last_name">
+                                <input type="text" id="last_name" required>
                             </li>
                             <li class="formEntry">
                                 <label for="email">EMAIL:</label>
-                                <input type="text" id="email">
+                                <input type="email" id="email" required>
                             </li>
                             <li class="formEntry">
                                 <label for="phone_number">PHONE NUMBER:</label>
-                                <input type="text" id="phone_number">
+                                <input type="text" id="phone_number" name="phone_number" pattern="^((\+1)?[\s-]?)?\(?[2-9]\d\d\)?[\s-]?[2-9]\d\d[\s-]?\d\d\d\d" title="Please enter a valid phone number!" required>
                             </li>
                             <li class="formEntry">
                                 <label for="password">PASSWORD:</label>
-                                <input type="password" id="password">
+                                <input type="password" id="password" minlength="8" title="minimum length 8 characters" required>
                             </li>
                             <li class="formEntry">
                                 <label for="confirm_password">CONFIRM PASSWORD:</label>
-                                <input type="password" id="confirm_password">
+                                <input type="password" id="confirm_password" required>
+                                <p id="passwordNotification"></p>
                             </li>
                         </ul>        
 
-                    </form>
+                    
                 </div>
             </div>
             <div id="footerdiv">
                 <button type="submit" id="btn_createAccount">Create Account</button>
+            </form>
                 <p id="accountCheck">Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
